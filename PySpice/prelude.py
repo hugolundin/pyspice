@@ -285,3 +285,9 @@ mkat = Unit(PySpice.Unit.u_mkat)
 ukat = Unit(PySpice.Unit.u_ukat)
 nkat = Unit(PySpice.Unit.u_nkat)
 pkat = Unit(PySpice.Unit.u_pkat)
+
+import PySpice.Logging.Logging as Logging
+Logging.setup_logging()
+
+from PySpice.Plot.BodeDiagram import bode_diagram
+from PySpice.Spice.Netlist import Circuit
